@@ -14,6 +14,35 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="images/tab.png" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
+
+	<div class="alert">
+				<!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
+				The TREx Lab is currently OPEN and is taking sample submissions by appointment only. <br />Please review our updated <a class="customHyper" href="announcements.html"> <b><em>SAMPLE SUBMISSION GUIDELINES</em> </b> </a>  for more information.<br />
+				To schedule a virtual meeting and or get in touch via e-mail: <a class="customHyper" href="home.html#Virtual"> <b><em>Click Here</em> </b> </a> <br />
+
+
+				<a class="customHyper" href="https://www.cornell.edu/coronavirus/" target="_blank"> <b> Novel Coronavirus (COVID-19) Resources and Updates </b> </a>
+
+	</div>
+
+
+	<style>
+			/* The alert message box */
+			.alert {
+				padding: 20px;
+				background-color: #fcbe40; /* Red */
+				color: black;
+				margin-bottom: 15px;
+			}
+
+			.customHyper {
+				color: #000000;
+			}
+
+	</style>
+
+
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -37,37 +66,59 @@
 						</div>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="services.html">Service & Pricing </a></li>
-							<li><a href="analysis.html">Analysis</a></li>
-							<li><a href="forms.html">Forms </a></li>
-							<li><a href="announcements.html">Announcements </a></li>
-							<li><a href="contact.html">Get in Touch </a></li>
-							
-						</ul>
-					</nav>
+					<!-- Menu -->
+						<nav id="menu">
+							<h2>Menu</h2>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="services.html">Service & Pricing </a></li>
+								<li><a href="analysis.html">Analysis</a></li>
+								<li><a href="forms.html">Forms & Resources </a></li>
+								<li><a href="announcements.html">Announcements </a></li>
+								<li><a href="faqs.html">FAQs </a></li>
+
+							</ul>
+						</nav>
+
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
+							<h1>Transcriptional Regulation & Expression Facility</h1>
+							<hr>
 							<h1>Services & Pricing :</h1>
-							
-							<section>
-								<blockquote><h2>2019 Services and Pricing (New!) </h2></blockquote>
 
+							<section>
+								<blockquote><h2>2021 Services and Pricing </h2>
+
+								<a  href="#t3"> ATAC-Seq </a> <br>
+								<a  href="#t1"> RNA-Seq </a> <br>
+								<a  href="#t2"> smRNA-Seq </a> <br>
+								<a href="#req"> RNA Input Requirements</a><br>
+								<a href="#data-dist"> Data Distribution </a><br>
+								<a href="#cp"> Custom Projects </a><br>
+
+
+								</blockquote>
+
+
+
+<br>
+<br>
+
+								<div class="box alt">
+								<div class="row gtr-uniform">
+								<div id="t3" class="col-12"><span class="image fit"><img  src="images/t3.jpeg" alt="" /></span></div>
+								</div>
 
 									<div class="box alt">
 									<div class="row gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/t1.png" alt="" /></span></div>
+									<div id="t1" class="col-12"><span class="image fit"><img src="images/t1.jpeg" alt="" /></span></div>
 									</div></div>
 
 									<div class="box alt">
 									<div class="row gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/t2.png" alt="" /></span></div>
+									<div id="t2" class="col-12"><span class="image fit"><img src="images/t2.jpeg" alt="" /></span></div>
 									</div>
 
 
@@ -77,39 +128,34 @@
 
 
 
+<blockquote><h2 id="req">RNA Input Requirements </h2></blockquote>
+<div class="box alt">
+<div class="row gtr-uniform">
+<div  class="col-12"><span class="image fit"><img src="images/rna-input.png" alt="" /></span></div>
 
-
-
-
-
-
-
-
-									<br>
-									<br>
-
-									<table >
-										<blockquote><h2>RNA Input Requirements </h2></blockquote>
+</div>
+								<!-- <table >
+										<blockquote><h2 id="req">RNA Input Requirements </h2></blockquote>
 										<tbody>
-											
-											<tr> 
+
+											<tr>
 												<td><i>Library Type</i></td>
 												<td><i>Transcriptome</i></td>
 												<td><i>Recommended</i></td>
 												<td><i>Minimum</i></td>
 
 											<tr>
-											
-											<tr> 
+
+											<tr>
 												<td>RNAseq - directional </td>
-												<td>polyA+ 
+												<td>polyA+
 													<br> rRNA-depleted
 												</td>
 												<td>
 													≥ 500ng total RNA, RIN > 8
 													<br> ≥ 2.5µg total RNA for standard protocol or
-													<br> 100ng total RNA for low-input protocol 
-													<br> and rRNA depletion kit (if other than RiboZero 
+													<br> 100ng total RNA for low-input protocol
+													<br> and rRNA depletion kit (if other than RiboZero
 													<br> Gold HMR, bacteria, or epidemiology)
 												</td>
 												<td>
@@ -117,15 +163,15 @@
 													<br> 100ng total RNA
 												</td>
 
-											<tr>												
-											<tr> 
+											<tr>
+											<tr>
 												<td>RNAseq - standard </td>
-												<td>polyA+ 
+												<td>polyA+
 													<br>
 													<br> rRNA-depleted
 												</td>
 												<td>
-													use directional RNAseq or 50-100ng 
+													use directional RNAseq or 50-100ng
 													<br>  total RNA, RIN > 8
 													<br> same as directional RNAseq
 												</td>
@@ -134,26 +180,26 @@
 													<br>
 													<br>
 													same as directional RNAseq
-													
+
 												</td>
 
 											<tr>
 
-											<tr> 
+											<tr>
 												<td>small-RNAseq</td>
-												<td>small RNAs 
+												<td>small RNAs
 												</td>
 												<td>
-													≥ 500ng total RNA or 
+													≥ 500ng total RNA or
 													<br> 10ng cell-free RNA (e.g. serum)
 												</td>
 												<td>
-													100ng total RNA or 
+													100ng total RNA or
 													<br> 10pg cell-free RNA (eg serum)
-													
+
 												</td>
 
-											<tr>												
+											<tr>
 
 
 
@@ -163,31 +209,69 @@
 
 
 
-									</table>
+									</table> -->
 
 
 
+																		<blockquote><h2 id="data-dist">Data Distribution</h2>
+
+																			<p> Data analysis reports (html and xlsx formats) including data QC, raw count tables, and differential expression analysis results will be distributed when a project is complete via Box, Google Drive, and/or email. <br />
+
+																				Large data files are available on request and will be distributed via Globus or on the BRC Bioinformatics network (user account required).<br />
+																				Raw reads (fastq files) will be archived for at least 5 years by the TREx Facility.<br />
+																				Mapped reads (bam files) will be retained only as required for standard analysis and will be purged on a quarterly basis.<br />
+																				The first distribution of large data files is included in the standard package rates. Repeat requests for distribution of large data files may incur additional fees.
+
+
+
+
+
+																			</p>
+
+
+
+
+
+																		</blockquote>
 
 
 
 
 
 									</div>
+
+
+									<blockquote><h2 id="cp">Custom Projects</h2>
+
+										<p> Custom projects are available on a limited basis and require pre-approval from the Director of the TREx Facility
+
+											<p>
+
+											Custom Lab Work $45 per hour.<br>
+											Custom Analysis $125 per hour.
+											</p>
+
+
+										</p>
+
+
+
+
+
+									</blockquote>
 								</section>
 
 						</div>
 					</div>
 
-				
 <!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
 								<section>
-								<h2>Get in touch</h2>
+								<h2> Get in touch</h2>
 
+								<form data-netlify-recaptcha="true" data-netlify="true" action="success.html">
 
-								<form data-netlify-recaptcha="true" data-netlify="true">
-									
 
 									<div class="fields">
 										<div class="field half">
@@ -203,17 +287,28 @@
 									<div data-netlify-recaptcha="true"></div>
 									<br>
 									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" formtarget="_blank" rel="noopener" onClick="window.location.reload();"/></li>
+										<li><input type="submit" value="Send" id="myButton"  class="primary" formtarget="_blank" rel="noopener" onClick="window.location.reload();"/></li>
 									</ul>
 								</form>
 							</section>
-							<section>
-							</section>
+							<script src="https://unpkg.com/@popperjs/core@2"></script>
+							<script src="https://unpkg.com/tippy.js@6"></script>
+							<script >
+							tippy('#myButton', {
+											content: 'Please wait for the confirmation screen to open in a new tab. If it does not appear then please enable pop-ups in your browser settinngs or use a different browser.',
+										});
+							</script>
 							<ul class="copyright">
-								<li>&copy; TREx 2019. All rights reserved</li>
+								<li>&copy; TREx 2022. All rights reserved</li>
+
+									<li class="icon solid fa-home">   526 Campus Road #333 Ithaca, NY 14853-2703</li>
+									<li class="icon solid fa-phone">  (607) 254-4834</li>
+
+
 							</ul>
 						</div>
 					</footer>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

@@ -14,6 +14,34 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="images/tab.png" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
+	<div class="alert">
+				<!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
+				The TREx Lab is currently OPEN and is taking sample submissions by appointment only. <br />Please review our updated <a class="customHyper" href="announcements.html"> <b><em>SAMPLE SUBMISSION GUIDELINES</em> </b> </a>  for more information.<br />
+				To schedule a virtual meeting and or get in touch via e-mail: <a class="customHyper" href="home.html#Virtual"> <b><em>Click Here</em> </b> </a> <br />
+
+
+				<a class="customHyper" href="https://www.cornell.edu/coronavirus/" target="_blank"> <b> Novel Coronavirus (COVID-19) Resources and Updates </b> </a>
+
+	</div>
+
+
+	<style>
+			/* The alert message box */
+			.alert {
+				padding: 20px;
+				background-color: #fcbe40; /* Red */
+				color: black;
+				margin-bottom: 15px;
+			}
+
+			.customHyper {
+				color: #000000;
+			}
+
+	</style>
+
+
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -37,50 +65,72 @@
 						</div>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="services.html">Service & Pricing </a></li>
-							<li><a href="analysis.html">Analysis</a></li>
-							<li><a href="forms.html">Forms </a></li>
-							<li><a href="announcements.html">Announcements </a></li>
-							<li><a href="contact.html">Get in Touch </a></li>
-							
-						</ul>
-					</nav>
+					<!-- Menu -->
+						<nav id="menu">
+							<h2>Menu</h2>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="services.html">Service & Pricing </a></li>
+								<li><a href="analysis.html">Analysis</a></li>
+								<li><a href="forms.html">Forms & Resources </a></li>
+								<li><a href="announcements.html">Announcements </a></li>
+								<li><a href="faqs.html">FAQs </a></li>
+
+							</ul>
+						</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
+							<h1> Transcriptional Regulation & Expression Facility </h1>
+							<hr>
 							<h1>Forms : </h1>
 							<!-- <span class="image main"><img src="images/pic13.jpg" alt="" /></span> -->
 
-							<p>All projects require a <a href="files/RSC-Project-Submission-Form.pdf" target="_blank"> Project Submission Form. </a>
+							<p>All projects require a <a href="files/TREx_sample_submission_form.xlsm" > Project Submission Form. </a>
 
-							<br> <br>For projects with more than 10 samples, please use the <a href="files/RSC-Sample-Information-2bea07n.xlsx" target="_blank"> Sample Information </a> file.
+							<!-- <br> <br>For projects with more than 10 samples, please use the <a href="files/RSC-Sample-Information-2bea07n.xlsx" target="_blank"> Sample Information </a> file. -->
 
 							<br> <br>All projects that use primary human samples (human subjects) require a <a href="files/RSC-Human-Samples-Confidentiality-Agreement.pdf" target="_blank"> Human Samples Confidentiality Agreement </a>
 							(standard human cell lines are exempt). </p>
 
- 
-								 
+							<hr>
+							<h1>Resources: </h1>
+							<h3>Guidelines & Protocols</h3>
+
+							<li><a href="files/TREx_RNA_Extraction_Protocol_v1.8.pdf" target="_blank">RNA Extraction Protocol </a></li>
+							<li><a href="files/TREx_Guide_to_Fragment_Analyzer_RNA_QC _V1_2.pdf" target="_blank">Fragment Analyzer RNA QC </a></li>
+							<li>
+								<a href="files/TRExGuide_rRNAdepletionmethods.pdf" target="_blank"> rRNA Depletion Methods</a>
+							</li>
+							<br>
+							<h3> Tech talk presentations:</h3>
+							<ul>
+
+							<li><a href="presentations/techTalk1-slides.pdf" target="_blank">Introduction To RNA-seq (04/15/2019) </a></li>
+							<li><a href="presentations/techTalk2-slides.pdf" target="_blank">What Would TREx Do? (05/20/2019) </a></li>
+							<li><a href="presentations/techTalk3-slides.pdf" target="_blank">Introduction To RNA-seq Analysis (06/24/2019) </a></li>
+							<li><a href="presentations/techTalk4-slides.pdf" target="_blank">Biological Discovery On RNA-seq Analysis (08/27/2019) </a></li>
+							<li><a href="presentations/techTalk5-slides.pdf" target="_blank">TREx & You (09/24/2019)</a></li>
+							<li><a href="presentations/techTalk6-slides.pdf" target="_blank">Intro to Visualization in RNA-seq (10/22/2019)</a></li>
+							<li><a href="presentations/techTalk7-slides.pdf" target="_blank">Survey of Genomic Technologies for Gene Regulation (12/04/2019)</a></li>
+							</ul>
+
+
 
 
 						</div>
 					</div>
 
-				
-		<!-- Footer -->
+<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
 								<section>
-								<h2>Get in touch</h2>
+							<h2> Get in touch</h2>
 
 
-								<form data-netlify-recaptcha="true" data-netlify="true">
-									
+								<form data-netlify-recaptcha="true" data-netlify="true" action="success.html">
+
 
 									<div class="fields">
 										<div class="field half">
@@ -96,18 +146,29 @@
 									<div data-netlify-recaptcha="true"></div>
 									<br>
 									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" formtarget="_blank" rel="noopener" onClick="window.location.reload();"/></li>
+										<li><input type="submit" value="Send"  id="myButton" class="primary" formtarget="_blank" rel="noopener" onClick="window.location.reload();"/></li>
 									</ul>
 								</form>
 							</section>
-							<section>
-							</section>
+							<script src="https://unpkg.com/@popperjs/core@2"></script>
+							<script src="https://unpkg.com/tippy.js@6"></script>
+							<script >
+							tippy('#myButton', {
+											content: 'Please wait for the confirmation screen to open in a new tab. If it does not appear then please enable pop-ups in your browser settinngs or use a different browser.',
+										});
+							</script>
+
 							<ul class="copyright">
-								<li>&copy; TREx 2019. All rights reserved</li>
+								<li>&copy; TREx 2022. All rights reserved</li>
+
+									<li class="icon solid fa-home">   526 Campus Road #333 Ithaca, NY 14853-2703</li>
+									<li class="icon solid fa-phone">  (607) 254-4834</li>
+
+
 							</ul>
 						</div>
 					</footer>
-			
+
 
 
 		<!-- Scripts -->
